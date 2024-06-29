@@ -1,0 +1,15 @@
+# Usa una imagen base de Ubuntu
+FROM python:3.8
+
+EXPOSE 5000
+
+RUN mkdir /opt/saludos
+
+WORKDIR /opt/saludos
+
+COPY requirements.txt /opt/saludos
+RUN pip install -r requirements.txt
+
+COPY . /opt/saludos
+
+CMD [ "./execute_flask.sh"]

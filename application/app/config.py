@@ -1,0 +1,5 @@
+class Config:
+    SECRET_KEY = 'A23YIEREERTOPP3435456'
+    SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://admin:admOro2024-@db:5432/saludos"
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    PRESERVE_CONTEXT_ON_EXCEPTION = False
